@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PatientPortal</name>
+    </assembly>
+    <members>
+        <member name="M:PatientPortal.Common.ApplicationLog.GetLoggableRequestBody(Microsoft.AspNetCore.Http.HttpRequest,System.String,System.String,System.Boolean)">
+            <summary>
+            Return the incoming request as a formatted string
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Controllers.PatientController.Login(PatientPortal.Common.User)">
+            <summary>
+            Get the jwt token on succesful login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Controllers.PatientController.GetAllPatients">
+            <summary>
+            Get all the patient details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Controllers.PatientController.PatientDetailsById(System.String)">
+            <summary>
+            Get patient details for the requested patient
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.IPatient.PatientDetailsById(System.String)">
+            <summary>
+            Get the patient details by PatientId
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.IPatient.GetAllPatients">
+            <summary>
+            Get all the patient details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.IPatient.GenerateToken(PatientPortal.Common.User)">
+            <summary>
+            Generate Jwt token based on user details
+            </summary>
+            <param name="userDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.Patient.GetAllPatients">
+            <summary>
+            Get all the patient details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.Patient.PatientDetailsById(System.String)">
+            <summary>
+            Get the patient details by PatientId
+            </summary>
+            <param name="patientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.Patient.GetApiClientRequest``1(PatientPortal.Common.RestRequest)">
+            <summary>
+            Generic method to make a async get request call.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="getRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.Patient.GenerateToken(PatientPortal.Common.User)">
+            <summary>
+            Generate Jwt token based on user details
+            </summary>
+            <param name="userDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.Patient.CustomMappingForPatient(System.Collections.Generic.List{PatientPortal.Models.PatientDetails})">
+            <summary>
+            Construct the custom patient list to do not expose the patientIds
+            </summary>
+            <param name="patientDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PatientPortal.Services.Patient.ConstructRestRequest(System.String)">
+            <summary>
+            Construct the Get rest request.
+            </summary>
+            <param name="requestUrl"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
